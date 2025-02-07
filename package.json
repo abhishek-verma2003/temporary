@@ -8,7 +8,7 @@
     "postinstall": "prisma generate",
     "dev": "nodemon api/app.js",
     "start": "node api/app.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client && npx prisma generate --schema=api/prisma/schema.prisma"
+    "build": "npm install && npm install --prefix client && npm run build --prefix client && chmod +x node_modules/.bin/prisma && npx prisma generate --schema=api/prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
