@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npx prisma generate",
+    "postinstall": "prisma generate",
     "dev": "nodemon api/app.js",
     "start": "node api/app.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client "
+    "build": "npm install && npm install --prefix client && npm run build --prefix client && npx prisma generate --schema=api/prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
@@ -23,9 +23,9 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.7",
-    "prisma": "^6.1.0",
+    "prisma": "^6.1.0"
   },
   "prisma": {
-    "schema": "prisma/schema.prisma"
+    "schema": "/api/prisma/schema.prisma"
   }
 }
