@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "prisma generate",
+    "postinstall": "npx prisma generate",
     "dev": "nodemon api/app.js",
     "start": "node api/app.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+    "build": "npm install && npm install --prefix client && npm run build --prefix client "
   },
   "keywords": [],
   "author": "",
